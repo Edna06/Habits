@@ -1,0 +1,121 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #09090A;
+}
+
+header {
+  margin-top: 99px;
+  height: 84px;
+  padding: 48px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header button {
+  width: 216px;
+  height: 52px;
+  border-radius: 8px;
+  background: none;
+  
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  border: 1px solid #8B5CF6;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 23px;
+  gap: 12px;
+  transition: all 0.4s;
+}
+
+header button:hover {
+cursor: pointer;
+transform: scale(0.96);
+}
+
+
+/* para centraliar itens na tela */
+/* display:grid; place-itens:center; height:100vh; */
+
+#form-habits {
+  display: flex;
+
+  padding: 48px;
+}
+
+.habits {
+  margin-top: 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: 'Roboto Mono', monospace;
+  color: #A1A1AA;
+  font-size: 20px;
+
+  text-align: center;
+
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #27272A;
+  border-radius: 8px;
+
+  background: #181818;
+}
+
+input:hover {
+  cursor: pointer;
+}
+/* pseudo-selector */
+input:checked {
+  background: #885CF6;
+  border: 2px solid #A788FA;
+}
