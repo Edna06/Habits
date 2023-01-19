@@ -10,17 +10,21 @@ body {
 }
 
 header {
-  margin-top: 99px;
-  height: 84px;
+  
   padding: 48px;
   
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 header button {
-  width: 216px;
+  width: fit-content; 
+
   height: 52px;
   border-radius: 8px;
   background: none;
@@ -52,9 +56,10 @@ transform: scale(0.96);
 #form-habits {
   display: flex;
 
-  padding: 48px;
+  padding: 184px 48px 48px;
+  width: fit-content; 
+  /* ajuste o conteúdo na caixa para que fique com espaço na minha margem direira*/
 }
-
 .habits {
   margin-top: 60px;
 
@@ -118,4 +123,12 @@ input:hover {
 input:checked {
   background: #885CF6;
   border: 2px solid #A788FA;
+}
+
+
+@media (max-width: 570px) {
+
+  button span {
+    display: none;
+  }
 }
