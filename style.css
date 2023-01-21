@@ -9,6 +9,20 @@ body {
   background: #09090A;
 }
 
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #09090A;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #db5a85;   /* color of the scroll thumb */
+  border-radius: 20px;
+}
+
 header {
   
   padding: 48px;
@@ -34,7 +48,6 @@ header button {
   font-weight: 600;
   font-size: 16px;
   line-height: 125%;
-  border: 1px solid #8B5CF6;
 
   display: flex;
   justify-content: center;
@@ -121,8 +134,8 @@ input:hover {
 }
 /* pseudo-selector */
 input:checked {
-  background: #885CF6;
-  border: 2px solid #A788FA;
+  background: #ff7ba4;
+  border: 2px solid #ff7ba4;
 }
 
 
